@@ -5,7 +5,7 @@ export default function Hero() {
   <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between py-10">
     
     {/* left side */}
-    <div className="w-full md:w-1/2">
+    <div className="w-full md:w-5/12">
 
       <div className="flex items-center gap-3">
         <img src="groupImage.png" alt="image" />
@@ -35,8 +35,12 @@ export default function Hero() {
     </div>
 
     {/* right side */}
-    <div className="w-full md:w-1/2 text-center md:text-end mt-8 md:mt-0">
-      <img className="w-full h-auto" src="heroImage.png" alt="hero" />
+    <div className="w-full md:w-7/12 text-center md:text-end mt-8 md:mt-0">
+      <img
+        className="w-full max-w-none scale-105 md:scale-110"
+        src="heroImage.png"
+        alt="hero"
+      />
     </div>
 
   </div>
