@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 const partners = [
-  { src: "/group1.png", alt: "Group 1", name: "Group 1" },
+  { src: "/Group1.png", alt: "Group 1", name: "Group 1" },
   { src: "/creative-infinity.png", alt: "Creative Infinity", name: "Creative Infinity" },
   { src: "/creativemarket.png", alt: "Creative Market", name: "Creative Market" },
   { src: "/crowdcode.png", alt: "Crowd Code", name: "Crowd Code" },
