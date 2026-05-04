@@ -11,7 +11,7 @@ export default function Hero() {
                     <p className="text-[1.12rem] text-[#494949]">Trusted by Worldwide</p>
                 </div>
 
-                <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl mt-6">Discover Where Your Brand, Culture, and Operations <span className="italic text-[#426DAB]">Are Out of Sync</span></h1>
+                <h1 className="font-bold text-2xl text-[#494949] md:text-4xl lg:text-5xl mt-6">Discover Where Your Brand, Culture, and Operations <span className="italic text-[#426DAB]">Are Out of Sync</span></h1>
                 <p className="text-[#676767] text-sm mt-4">Take the Harmony 360 Lite Diagnostic and uncover where misalignment is impacting your customer experience, team performance, and operational efficiency—in just a few minutes.</p>
 
                 <div className="flex items-center gap-4 mt-4">
