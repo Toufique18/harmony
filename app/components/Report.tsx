@@ -3,7 +3,7 @@ export default function Report() {
   return (
    
     <section className="bg-[#2B2B2B] w-full ">
-        <div className="max-w-7xl mx-auto py-10">
+        <div className="max-w-7xl mx-auto py-10 px-4">
 
             <div className="text-white mb-12">
         <button className="text-sm md:text-sm text-[#FFFFFF] rounded-full bg-white/5 backdrop-blur-sm border border-white/5 mb-3 shadow-sm px-3 py-1">Your Report Includes</button>
@@ -28,12 +28,12 @@ export default function Report() {
             
 
               <h3 className="text-xl text-white font-semibold mb-4 tracking-tight">
-                {/* {system.title} */}
+                
                 Brand Alignment Score
               </h3>
               
               <p className="text-[#FFFFFF9C] text-sm leading-relaxed">
-                {/* {system.description} */}
+                
                 A clear score out of 80 with percentage and band placement — across all four dimensions normalized to a 20-point scale each.
               </p>
             </div>
