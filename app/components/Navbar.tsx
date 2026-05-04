@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full bg-[#FFFFFF] border-non top-0 z-50 sticky">
+      <nav className="w-full bg-[#FFFFFF] border-none top-0 z-50 sticky">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           {/* Logo */}
         <img src="harmony-logo.png" alt="harmony" />
