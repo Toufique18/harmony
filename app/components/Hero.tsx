@@ -9,27 +9,27 @@ export default function Hero() {
 
       <div className="flex items-center gap-3">
         <img src="groupImage.png" alt="image" />
-        <p className="text-[1rem] md:text-[1.12rem] text-[#494949]">
+        <p className="font-sans text-[1rem] md:text-[1.12rem] text-[#494949]">
           Trusted by Worldwide
         </p>
       </div>
 
-      <h1 className="font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl text-[#252525] mt-6 leading-snug">
+      <h1 className="font-bold font-serif text-xl sm:text-2xl md:text-4xl lg:text-5xl text-[#252525] mt-6 leading-snug">
         Discover Where Your Brand, Culture, and Operations{" "}
         <span className="italic text-[#426DAB]">Are Out of Sync</span>
       </h1>
 
-      <p className="text-[#676767] text-sm md:text-base mt-4">
+      <p className="text-[#676767] text-sm md:text-base mt-4 font-sans">
         Take the Harmony 360 Lite Diagnostic and uncover where misalignment is
         impacting your customer experience, team performance, and operational
         efficiency—in just a few minutes.
       </p>
 
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
-        <button className="px-4 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs sm:text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D]">
+        <button className="font-sans px-4 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs sm:text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D]">
           Start Your Free Alignment Report
         </button>
-        <p className="text-sm text-[#494949]">Under 5 minutes</p>
+        <p className="font-sans text-sm text-[#494949]">Under 5 minutes</p>
       </div>
 
     </div>

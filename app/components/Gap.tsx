@@ -16,7 +16,7 @@ export default function Gap(){
 
         //     </div>
         // </section>
-        <section className="py-6 px-6 sm:px-12 lg:px-10 bg-[#FFFFFF]">
+        <section className="py-6 px-6 sm:px-12 lg:px-10 bg-[#FFFFFF] font-sans">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between rounded-xl bg-[#FAFAFA] px-3 lg:px-6">
         {/* Left Side: */}
         <div className="lg:w-2/3">
