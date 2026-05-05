@@ -3,7 +3,7 @@ export default function Report() {
   return (
    
     <section className="bg-[#2B2B2B] w-full font-sans">
-        <div className="max-w-7xl mx-auto py-6 md-10 px-4">
+        <div className="max-w-7xl mx-auto py-6 md:py-20 md-10 px-4">
 
             <div className="text-white mb-12 text-center md:text-left">
   <div className="flex justify-center md:justify-start">

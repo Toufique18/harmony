@@ -3,10 +3,10 @@ export default function Footer() {
     <section className="font-sans relative overflow-hidden bg-[#FFFFFF] py-20">
   {/* Background Image - 80% width and centered */}
   <div 
-    className="absolute inset-0 bottom-[-200] bg-no-repeat pointer-events-none"
+    className="absolute inset-0 bottom-[-200] bg-no-repeat pointer-events-none max-w-7xl mx-auto"
     style={{
       backgroundImage: "url('/Harmony360.svg')",
-      backgroundSize: "80% auto", // 80% width, auto height
+      backgroundSize: "98% auto", // 80% width, auto height
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       opacity: 0.5 // Optional: adjust opacity as needed

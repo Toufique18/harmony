@@ -14,14 +14,13 @@ export default function Brand(){
         THE REALITY CHECK
       </button>
       
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#252525] mb-6 leading-tight max-w-2xl">
-        Where Does Your <br className="hidden sm:block" />
-        <span className="text-[#426DAB] italic">Brand Truly</span> Stand?
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#252525] mb-6 md:mb-0 leading-tight max-w-7xl">
+        Where Does Your <br className="hidden sm:block" /><span className="text-[#426DAB] italic">Brand Truly</span> Stand?
       </h2>
     </div>
     
     {/* Right Side - Bottom (Centered on mobile, right on desktop) */}
-    <div className="flex flex-col mt-0 md:mt-4 lg:mt-4 md:ml-auto md:w-1/2 text-center md:text-left">
+    <div className="flex flex-col mt-0 md:mt-0 lg:mt-0 md:ml-auto md:w-3/5 text-center md:text-left">
       <p className="text-base md:text-base text-[#5E5E5E] leading-relaxed">
         Most organizations assume they're aligned. Few actually are. 
         This assessment reveals the truth.

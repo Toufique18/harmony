@@ -16,7 +16,7 @@ export default function Navbar() {
         <img src="harmony-logo.png" alt="harmony" />
 
 
-          <button className="px-3 lg:px-5 py-2.5 rounded-lg border border-[#F09425] text-[#F09425] text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95">
+          <button className="px-3 lg:px-5 py-2.5 rounded-lg border border-[#F09425] text-[#F09425] hover:bg-[#F09425] hover:text-white text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95">
             Get Started
           </button>
 
