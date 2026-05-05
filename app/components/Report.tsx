@@ -5,16 +5,21 @@ export default function Report() {
     <section className="bg-[#2B2B2B] w-full font-sans">
         <div className="max-w-7xl mx-auto py-6 md-10 px-4">
 
-            <div className="text-white mb-12">
-        <button className="text-sm md:text-sm text-[#FFFFFF] rounded-full bg-white/5 backdrop-blur-sm border border-white/5 mb-3 shadow-sm px-3 py-1">Your Report Includes</button>
-          
-          <h2 className="text-2xl md:text-4xl font-serif font-bold text-[#FFFFFF] mb-4">
-            This Is Not a Survey <span className="italic text-[#FFFFFF94]">It's a Diagnostic.</span>
-          </h2>
-          <p className="text-[#FFFFFF99] text-sm">
-            A structured four-step process that goes from your details to a complete diagnostic report in under five minutes.
-          </p>
-        </div>
+            <div className="text-white mb-12 text-center md:text-left">
+  <div className="flex justify-center md:justify-start">
+    <button className="text-sm md:text-sm text-[#FFFFFF] rounded-full bg-white/5 backdrop-blur-sm border border-white/5 mb-3 shadow-sm px-3 py-1">
+      Your Report Includes
+    </button>
+  </div>
+  
+  <h2 className="text-2xl md:text-4xl font-serif font-bold text-[#FFFFFF] mb-4">
+    This Is Not a Survey <span className="italic text-[#FFFFFF94]">It's a Diagnostic.</span>
+  </h2>
+  
+  <p className="text-[#FFFFFF99] text-sm max-w-2xl mx-auto md:mx-0">
+    A structured four-step process that goes from your details to a complete diagnostic report in under five minutes.
+  </p>
+</div>
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> 
