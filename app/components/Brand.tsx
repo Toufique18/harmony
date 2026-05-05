@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function Brand(){
 
     return(
@@ -14,8 +17,8 @@ export default function Brand(){
         THE REALITY CHECK
       </button>
       
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#252525] mb-6 md:mb-0 leading-tight max-w-7xl">
-        Where Does Your <br className="hidden sm:block" /><span className="text-[#426DAB] italic">Brand Truly</span> Stand?
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-bold text-[#252525] mb-6 md:mb-0 leading-tight">
+        Where Does Your <span className="text-[#426DAB] italic">Brand <br className="hidden sm:block" /> Truly</span> Stand?
       </h2>
     </div>
     
@@ -96,10 +99,30 @@ export default function Brand(){
 {/* slide bar */}
 
 <div className="max-w-7xl mx-auto mt-10">
+  <div className="relative py-6 rounded-full bg-[linear-gradient(to_right,_#dc2626,_#f59e0b,_#16a34a)] flex items-center justify-center">
+
+    {/* Animated center circle */}
+    <motion.div
+      className="absolute w-18 h-18 bg-gray-100 rounded-full flex items-center justify-center shadow-lg border-8 border-amber-500"
+      initial={{ x: -60 }}
+      whileInView={{ x: [ -200, 200, 0 ] }}
+      transition={{
+        duration: 1.5,
+        ease: "easeInOut"
+      }}
+      viewport={{ once: true, amount: 0.6 }}
+    >
+      <span className="text-3xl font-bold text-amber-600">?</span>
+    </motion.div>
+
+  </div>
+</div>
+
+{/* <div className="max-w-7xl mx-auto mt-10">
 
     <img src="slider.svg" alt="" />
 
-</div>
+</div> */}
 
         <div className="max-w-7xl mx-auto mt-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

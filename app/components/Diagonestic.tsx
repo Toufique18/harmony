@@ -18,7 +18,7 @@ export default function Diagnostic() {
         {/* Steps Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Step 01 */}
-          <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden transition-all hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-lg border py-4 border-gray-100 overflow-hidden transition-all hover:shadow-xl">
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-5xl font-bold text-gray-200">01</span>
@@ -32,7 +32,7 @@ export default function Diagnostic() {
           </div>
 
           {/* Step 02 */}
-          <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden transition-all hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-lg py-4 border border-gray-100 overflow-hidden transition-all hover:shadow-xl">
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-5xl font-bold text-gray-200">02</span>
@@ -46,7 +46,7 @@ export default function Diagnostic() {
           </div>
 
           {/* Step 03 */}
-          <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden transition-all hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-lg py-4 border border-gray-100 overflow-hidden transition-all hover:shadow-xl">
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-5xl font-bold text-gray-200">03</span>
@@ -60,7 +60,7 @@ export default function Diagnostic() {
           </div>
 
           {/* Step 04 */}
-          <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden transition-all hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-lg py-4 border border-gray-100 overflow-hidden transition-all hover:shadow-xl">
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-5xl font-bold text-gray-200">04</span>
