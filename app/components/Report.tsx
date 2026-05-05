@@ -3,7 +3,7 @@ export default function Report() {
   return (
    
     <section className="bg-[#2B2B2B] w-full font-sans">
-        <div className="max-w-7xl mx-auto py-10 px-4">
+        <div className="max-w-7xl mx-auto py-6 md-10 px-4">
 
             <div className="text-white mb-12">
         <button className="text-sm md:text-sm text-[#FFFFFF] rounded-full bg-white/5 backdrop-blur-sm border border-white/5 mb-3 shadow-sm px-3 py-1">Your Report Includes</button>

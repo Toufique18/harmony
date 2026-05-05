@@ -8,6 +8,8 @@ import Report from "./components/Report";
 import Triangle from "./components/Triangle";
 import Gap from "./components/Gap";
 import Know from "./components/Know";
+import Footer from "./components/Footer";
+import Brand from "./components/Brand";
 
 export default function Home() {
   return (
@@ -20,8 +22,10 @@ export default function Home() {
         <Diagnostic/>
         <Report/>
         <Triangle/>
+        <Brand/>
         <Gap/>
         <Know/>
+        <Footer/>
 
 
         

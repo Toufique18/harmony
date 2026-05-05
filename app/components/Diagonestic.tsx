@@ -1,11 +1,11 @@
 // app/page.tsx
 export default function Diagnostic() {
   return (
-    <section className=" bg-white py-16 px-4 font-sans">
+    <section className=" bg-white md:py-16 py-8 px-4 font-sans">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-        <button className="text-sm md:text-sm text-[#494949] border-[#F0F0F0] mb-3 shadow-sm px-2 py-1">THE PROCESS</button>
+        <button className="text-sm md:text-sm rounded-xl text-[#494949] border-[#F0F0F0] mb-3 shadow-sm px-2 py-1">THE PROCESS</button>
           
           <h2 className="text-2xl md:text-5xl font-serif font-bold text-[#252525] mb-4">
             How the Diagnostic <span className="italic text-[#426DAB]">Works</span>
