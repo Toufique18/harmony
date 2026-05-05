@@ -7,6 +7,7 @@ import ReportPage from "./components/Report";
 import Report from "./components/Report";
 import Triangle from "./components/Triangle";
 import Gap from "./components/Gap";
+import Know from "./components/Know";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Report/>
         <Triangle/>
         <Gap/>
+        <Know/>
 
 
         
