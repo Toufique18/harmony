@@ -3,62 +3,63 @@ export default function Brand(){
     return(
 
         <section className="bg-white w-full md:py-15 py-12 px-4 font-sans">
-  <div className="max-w-7xl mx-auto">
+ <div className="max-w-7xl mx-auto px-4 sm:px-6">
+  
+  {/* Flex container */}
+  <div className="flex flex-col">
     
-    {/* Flex container */}
-    <div className="flex flex-col">
+    {/* Left Side - Top (Centered on mobile, left on desktop) */}
+    <div className="flex flex-col items-center md:items-start text-center md:text-left">
+      <button className="text-sm md:text-sm rounded-xl text-[#494949] border border-[#F0F0F0] mb-3 shadow-sm px-3 py-1.5 bg-white inline-block">
+        THE REALITY CHECK
+      </button>
       
-      {/* Left Side - Top */}
-      <div className="flex flex-col items-start">
-        <button className="text-sm md:text-sm rounded-xl text-[#494949] border border-[#F0F0F0] mb-3 shadow-sm px-3 py-1.5 bg-white">
-          THE REALITY CHECK
-        </button>
-        
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#252525] mb-6 leading-tight max-w-2xl">
-          Where Does Your <br className="hidden sm:block" />
-          <span className="text-[#426DAB] italic">Brand Truly</span> Stand?
-        </h2>
-      </div>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#252525] mb-6 leading-tight max-w-2xl">
+        Where Does Your <br className="hidden sm:block" />
+        <span className="text-[#426DAB] italic">Brand Truly</span> Stand?
+      </h2>
+    </div>
+    
+    {/* Right Side - Bottom (Centered on mobile, right on desktop) */}
+    <div className="flex flex-col mt-0 md:mt-4 lg:mt-4 md:ml-auto md:w-1/2 text-center md:text-left">
+      <p className="text-base md:text-base text-[#5E5E5E] leading-relaxed">
+        Most organizations assume they're aligned. Few actually are. 
+        This assessment reveals the truth.
+      </p>
       
-      {/* Right Side - Bottom */}
-      <div className="flex flex-col mt-8 md:mt-8 lg:mt-8 md:ml-auto md:w-1/2">
-        <p className="text-base md:text-base text-[#5E5E5E] leading-relaxed">
-          Most organizations assume they're aligned. Few actually are. 
-          This assessment reveals the truth.
-        </p>
-        
-        <div className="flex flex-wrap items-center justify-between gap-3 md:gap-4 mt-4">
-          <div className="flex items-center gap-1.5">
-            <svg className="w-4 h-4 text-[#A68E1D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span className="text-xs sm:text-sm md:text-base text-[#A68E1D] font-medium">10 Questions</span>
-          </div>
-          
-          <span className="text-[#BDBDBD]  sm:inline">|</span>
-          
-          <div className="flex items-center gap-1.5">
-            <svg className="w-4 h-4 text-[#DE6213]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span className="text-xs sm:text-sm md:text-base text-[#DE6213] font-medium">Under 5 Minutes</span>
-          </div>
-          
-          <span className="text-[#BDBDBD]  sm:inline">|</span>
-          
-          <div className="flex items-center gap-1.5">
-            <svg className="w-4 h-4 text-[#08732D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
-            <span className="text-xs sm:text-sm md:text-base text-[#08732D] font-medium">Instant Report</span>
-          </div>
+      {/* Stats Row - Centered on mobile, left on desktop */}
+      <div className="flex flex-wrap items-center justify-center md:justify-between gap-3 md:gap-4 mt-4">
+        <div className="flex items-center gap-1.5">
+          <svg className="w-4 h-4 text-[#A68E1D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span className="text-xs sm:text-sm md:text-base text-[#A68E1D] font-medium">10 Questions</span>
         </div>
         
-        <div className="border-b border-[#E0E0E0] pt-4 mt-4"></div>
+        <span className="text-[#BDBDBD] hidden sm:inline">|</span>
+        
+        <div className="flex items-center gap-1.5">
+          <svg className="w-4 h-4 text-[#DE6213]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span className="text-xs sm:text-sm md:text-base text-[#DE6213] font-medium">Under 5 Minutes</span>
+        </div>
+        
+        <span className="text-[#BDBDBD] hidden sm:inline">|</span>
+        
+        <div className="flex items-center gap-1.5">
+          <svg className="w-4 h-4 text-[#08732D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span className="text-xs sm:text-sm md:text-base text-[#08732D] font-medium">Instant Report</span>
+        </div>
       </div>
       
+      <div className="border-b border-[#E0E0E0] pt-4 mt-4"></div>
     </div>
-  </div >
+    
+  </div>
+</div>
 
   <div className="max-w-7xl mx-auto text-center mt-10">
   
