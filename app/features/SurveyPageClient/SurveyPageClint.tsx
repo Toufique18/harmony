@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -119,7 +120,7 @@ export default function SurveyPageClient({
     const savedGoal = localStorage.getItem("assessmentGoal");
 
     if (savedAssessmentId) {
-      setAssessmentId(savedAssessmentId);
+      setAssessmentId(savedAssessmentId as string);
     }
 
     if (savedStep === "questions" && savedAssessmentId) {

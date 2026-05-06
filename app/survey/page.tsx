@@ -11,7 +11,7 @@ export default async function SurveyPage() {
     headers: {
       "Content-Type": "application/json",
     },
-    cache: "force-cache",
+    cache: "no-cache",
   });
   const data = await res.json();
   console.log(data);
