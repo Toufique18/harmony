@@ -1,4 +1,5 @@
-export default function Triangle(){
+import Link from "next/link";
+  export default function Triangle(){
 
     return(
 
@@ -26,7 +27,7 @@ export default function Triangle(){
               
               <div className="mb-6 max-w-md mx-auto">
                 
-                  <button className="px-3 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs lg:text-lg font-sans font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D]">Discover Your True Alignment Score →</button>
+                  <Link href="/survey" className="px-3 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs lg:text-lg font-sans font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D]">Discover Your True Alignment Score →</Link>
                 
               </div>
             </div>

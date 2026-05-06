@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-
+import Link from "next/link";
 export default function ResultLayout({
   children,
 }: {
@@ -17,9 +17,9 @@ export default function ResultLayout({
             <button className="px-3 lg:px-5 py-2.5 border border-[#F09425] text-[#F09425] hover:bg-[#F09425] hover:text-white text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer">
             Download PDF
           </button>
-          <button className="px-3 lg:px-5 py-2.5  text-[#FFFFFF] bg-[#F09425] text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer">
+          <Link href="/survey" className="px-3 lg:px-5 py-2.5  text-[#FFFFFF] bg-[#F09425] text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer">
             Start Again
-          </button>
+          </Link>
         </div>
           
 

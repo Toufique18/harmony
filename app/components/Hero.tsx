@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="w-full bg-[#FFFFFF]">
@@ -27,9 +29,9 @@ export default function Hero() {
       {/* Button container - centered on mobile, left aligned on desktop */}
       <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 mt-4">
         <div className="w-full sm:w-auto flex justify-center md:justify-start">
-          <button className="font-sans px-4 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs sm:text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D] whitespace-nowrap">
+          <Link href="/survey" className="font-sans px-4 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs sm:text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D] whitespace-nowrap">
             Discover Your True Alignment Score →
-          </button>
+          </Link>
         </div>
         <p className="font-sans text-sm text-[#494949] text-center sm:text-left">Under 5 minutes</p>
       </div>
@@ -45,7 +47,7 @@ export default function Hero() {
     </div>
 
   </div>
-
+ 
 </section>
   );
 }

@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-
+import Link from "next/link";
 export default function SurveyLayout({
   children,
 }: {
@@ -10,12 +10,12 @@ export default function SurveyLayout({
       <nav className="w-full bg-[#FFFFFF] border-none top-0 z-50 sticky">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           {/* Logo */}
-        <img src="harmony-logo.png" alt="harmony" />
+        <Link href="/"><img src="harmony-logo.png" alt="harmony" /></Link>
 
 
-          <button className="px-3 lg:px-5 py-2.5 rounded-lg border border-[#F09425] text-[#F09425] hover:bg-[#F09425] hover:text-white text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95">
-            Start Your Free Alignment Report
-          </button>
+          <Link href="/survey" className="px-3 lg:px-5 py-2.5 rounded-lg border border-[#F09425] text-[#F09425] hover:bg-[#F09425] hover:text-white text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95">
+            Discover Your True Alignment Score →
+          </Link>
 
           
         </div>

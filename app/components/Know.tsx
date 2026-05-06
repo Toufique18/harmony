@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Know(){
 
     return(
@@ -35,9 +37,9 @@ export default function Know(){
       
       {/* Right Button - Full width on mobile, auto on desktop */}
       <div className="w-full md:w-auto flex justify-center md:justify-end">
-        <button className="px-4 sm:px-6 md:px-5 lg:px-6 py-2.5 sm:py-3 rounded-lg border-none bg-[#FFFFFF] text-[#2B2B2B] text-sm sm:text-base md:text-sm lg:text-lg font-sans font-semibold transition-all hover:scale-105 active:scale-95 whitespace-nowrap">
+        <Link href="/survey" className="px-4 sm:px-6 md:px-5 lg:px-6 py-2.5 sm:py-3 rounded-lg border-none bg-[#FFFFFF] text-[#2B2B2B] text-sm sm:text-base md:text-sm lg:text-lg font-sans font-semibold transition-all hover:scale-105 active:scale-95 whitespace-nowrap">
           Discover Your True Alignment Score →
-        </button>
+        </Link>
       </div>
       
     </div>
