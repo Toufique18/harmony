@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const questions = [
   {
@@ -84,9 +85,11 @@ const questions = [
 ];
 
 export default function SurveyPage() {
+  const router = useRouter();
   const [step, setStep] = useState("details"); // "details" | "questions"
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const [selectedGoal, setSelectedGoal] = useState("Improve customer experience");
 
@@ -102,8 +105,10 @@ export default function SurveyPage() {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(prev => prev + 1);
     } else {
-      // Reached the end, submit logic could go here
-      alert("Survey completed!");
+      setIsLoading(true);
+      setTimeout(() => {
+        router.push("/result");
+      }, 4000);
     }
   };
 
@@ -124,6 +129,28 @@ export default function SurveyPage() {
 
     return (
       <div className="w-full max-w-[800px] px-4 md:px-8 mx-auto font-sans mt-4 md:mt-8">
+        {isLoading && (
+          <div className="fixed inset-0 bg-white z-[9999] flex items-center justify-center p-6">
+            <div className="max-w-[800px] w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-12">
+              <div className="flex flex-col">
+                <div className="flex gap-2 mb-8">
+                  <div className="h-1.5 w-12 bg-[#4A6B9C] rounded-full"></div>
+                  <div className="h-1.5 w-12 bg-[#4A6B9C] rounded-full"></div>
+                  <div className="h-1.5 w-12 bg-[#4A6B9C] rounded-full"></div>
+                </div>
+                <h1 className="text-3xl md:text-[42px] text-[#252525] mb-5 leading-tight font-medium" style={{ fontFamily: 'var(--font-display), serif' }}>
+                  Analyzing Your Alignment <span className="italic text-[#4A6B9C]">Architecture ...</span>
+                </h1>
+                <p className="text-[#6B7280] text-sm md:text-base leading-relaxed max-w-[600px]">
+                  Precision takes a moment. Your roadmap to a high-performance, congruent brand is almost ready.
+                </p>
+              </div>
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 md:w-20 md:h-20 border-4 border-gray-100 border-t-[#F09425] rounded-full animate-spin"></div>
+              </div>
+            </div>
+          </div>
+        )}
         {/* Progress */}
         <div className="flex gap-2 mb-8">
           <div className="h-1.5 w-10 md:w-12 bg-[#4A6B9C] rounded-full"></div>

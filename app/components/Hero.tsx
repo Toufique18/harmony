@@ -7,7 +7,7 @@ export default function Hero() {
     {/* left side */}
     <div className="w-full md:w-1/2">
       <div className="flex items-center gap-3">
-        <img src="groupImage.png" alt="image" />
+        <img src="groupImage.svg" alt="image" />
         <p className="font-sans text-[1rem] md:text-[1.12rem] text-[#494949]">
           Trusted by Worldwide
         </p>
@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 mt-4">
         <div className="w-full sm:w-auto flex justify-center md:justify-start">
           <button className="font-sans px-4 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs sm:text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D] whitespace-nowrap">
-            Start Your Free Alignment Report
+            Discover Your True Alignment Score →
           </button>
         </div>
         <p className="font-sans text-sm text-[#494949] text-center sm:text-left">Under 5 minutes</p>

@@ -68,7 +68,7 @@ export default function Diagnostic() {
               </div>
               <h3 className="text-[1rem] font-semibold text-[#252525] mb-1">Your Report Is Generated</h3>
               <p className="text-[#5f5e5e] text-xs">
-                A concise diagnostic report with insights, tension statements, and a tailored upgrade path.
+                A concise diagnostic report with insights, tension areas and a clear path to a solution.
               </p>
             </div>
           </div>

@@ -128,71 +128,75 @@ export default function Brand(){
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
   
   {/* Card 1 - Misaligned */}
-  <div className="border border-[#E8E8E8] rounded-xl p-6 bg-[#FAFAFA] hover:shadow-md transition-shadow">
+  <div className="border border-[#E8E8E8] rounded-[4px] p-6 bg-[#FAFAFA] hover:shadow-md transition-shadow">
   <div className="flex flex-col text-center items-center justify-center gap-3 mb-3">
-    <div className="w-12 h-12 rounded-full bg-[#dc3c28]/10 flex items-center justify-center mx-auto">
+    {/* <div className="w-12 h-12 rounded-full bg-[#dc3c28]/10 flex items-center justify-center mx-auto">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#dc3c28" strokeWidth="2.2" strokeLinecap="round">
         <line x1="18" y1="6" x2="6" y2="18"/>
         <line x1="6" y1="6" x2="18" y2="18"/>
       </svg>
-    </div>
+    </div> */}
+    <img src="cross.svg" alt="" />
     <div className="text-xl font-bold" style={{ color: "#dc3c28" }}>Misaligned</div>
   </div>
   <div className="text-[#5E5E5E] leading-relaxed mb-3 text-center">
     Critical gaps across key areas are creating inconsistent experiences and hidden risks.
   </div>
-  <div className="text-xl font-bold text-center" style={{ color: "#dc3c28" }}>0 – 31</div>
+  {/* <div className="text-xl font-bold text-center" style={{ color: "#dc3c28" }}>0 – 31</div> */}
 </div>
   
   {/* Card 2 - Fragmented */}
-  <div className="border border-[#E8E8E8] rounded-xl p-6 bg-[#FAFAFA] hover:shadow-md transition-shadow">
+  <div className="border border-[#E8E8E8] rounded-[4px] p-6 bg-[#FAFAFA] hover:shadow-md transition-shadow">
   <div className="flex flex-col text-center items-center justify-center gap-3 mb-3">
-    <div className="w-12 h-12 rounded-full bg-[#f39c12]/10 flex items-center justify-center mx-auto">
+    {/* <div className="w-12 h-12 rounded-full bg-[#f39c12]/10 flex items-center justify-center mx-auto">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f39c12" strokeWidth="2.2" strokeLinecap="round">
         <line x1="12" y1="19" x2="12" y2="5"/>
         <line x1="5" y1="12" x2="19" y2="12"/>
       </svg>
-    </div>
-    <div className="text-xl font-bold" style={{ color: "#f39c12" }}>Fragmented</div>
+    </div> */}
+    <img src="chain.svg" alt="" />
+    <div className="text-xl font-bold text-[#DE6213]" >Fragmented</div>
   </div>
   <div className="text-[#5E5E5E] leading-relaxed mb-3 text-center">
     Critical gaps across key areas are creating inconsistent experiences and hidden risks.
   </div>
-  <div className="text-xl font-bold text-center" style={{ color: "#f39c12" }}>32 – 47</div>
+  {/* <div className="text-xl font-bold text-center" style={{ color: "#f39c12" }}>32 – 47</div> */}
 </div>
   
   {/* Card 3 - Developing */}
-  <div className="border border-[#E8E8E8] rounded-xl p-6 bg-[#FAFAFA] hover:shadow-md transition-shadow">
+  <div className="border border-[#EDEDED] rounded-[4px] p-6 bg-[#FAFAFA] hover:shadow-md transition-shadow">
   <div className="flex flex-col text-center items-center justify-center gap-3 mb-3">
-    <div className="w-12 h-12 rounded-full bg-[#3498db]/10 flex items-center justify-center mx-auto">
+    {/* <div className="w-12 h-12 rounded-full bg-[#3498db]/10 flex items-center justify-center mx-auto">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3498db" strokeWidth="2.2" strokeLinecap="round">
         <circle cx="12" cy="12" r="10"/>
         <line x1="12" y1="8" x2="12" y2="12"/>
         <line x1="12" y1="16" x2="12.01" y2="16"/>
       </svg>
-    </div>
-    <div className="text-xl font-bold" style={{ color: "#3498db" }}>Developing</div>
+    </div> */}
+    <img src="sign.svg" alt="" />
+    <div className="text-xl font-bold text-[#A68E1D]">Developing</div>
   </div>
   <div className="text-[#5E5E5E] leading-relaxed mb-3 text-center">
     You're making progress, but important gaps remain that limit consistency and scale.
   </div>
-  <div className="text-xl font-bold text-center" style={{ color: "#3498db" }}>48 – 63</div>
+  {/* <div className="text-xl font-bold text-center" style={{ color: "#3498db" }}>48 – 63</div> */}
 </div>
   
   {/* Card 4 - Strong */}
-  <div className="border border-[#E8E8E8] rounded-xl p-6 bg-[#FAFAFA] hover:shadow-md transition-shadow">
+  <div className="border border-[#E8E8E8] rounded-[4px] p-6 bg-[#FAFAFA] hover:shadow-md transition-shadow">
   <div className="flex flex-col text-center items-center justify-center gap-3 mb-3">
-    <div className="w-12 h-12 rounded-full bg-[#27ae60]/10 flex items-center justify-center mx-auto">
+    {/* <div className="w-12 h-12 rounded-full bg-[#27ae60]/10 flex items-center justify-center mx-auto">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#27ae60" strokeWidth="2.2" strokeLinecap="round">
         <polyline points="20 6 9 17 4 12"/>
       </svg>
-    </div>
+    </div> */}
+    <img src="correct.svg" alt="" />
     <div className="text-xl font-bold" style={{ color: "#27ae60" }}>Strong</div>
   </div>
   <div className="text-[#5E5E5E] leading-relaxed mb-3 text-center">
     Your organization is well aligned and built for consistent delivery and sustainable growth.
   </div>
-  <div className="text-xl font-bold text-center" style={{ color: "#27ae60" }}>64 – 80</div>
+  {/* <div className="text-xl font-bold text-center" style={{ color: "#27ae60" }}>64 – 80</div> */}
 </div>
   
 </div>
