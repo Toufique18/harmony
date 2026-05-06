@@ -177,11 +177,11 @@ export default function SurveyPage() {
               <span className="text-[14px] text-gray-500 font-medium">{currentQuestion.category}</span>
               <span className="text-[14px] text-gray-500 font-medium">Question {currentQuestionIndex + 1} of 8</span>
             </div>
-            
+
             {/* Inner Progress Bar */}
             <div className="w-full h-1.5 bg-white rounded-full mb-8 overflow-hidden shadow-inner border border-gray-100">
-              <div 
-                className="h-full bg-[#F09425] rounded-full transition-all duration-300" 
+              <div
+                className="h-full bg-[#F09425] rounded-full transition-all duration-300"
                 style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}
               ></div>
             </div>
@@ -194,7 +194,7 @@ export default function SurveyPage() {
               {currentQuestion.options.map((option, idx) => {
                 const isSelected = currentAnswer === option;
                 return (
-                  <label 
+                  <label
                     key={idx}
                     className="flex items-center justify-between p-4 rounded-md border border-gray-200 bg-white cursor-pointer hover:border-[#F09425] transition-colors shadow-sm"
                     onClick={() => handleOptionSelect(option)}
@@ -211,10 +211,10 @@ export default function SurveyPage() {
             </div>
           </div>
         </div>
-        
+
         <div className="flex flex-col md:flex-row justify-between gap-4 mt-6 mb-20">
           {currentQuestionIndex > 0 && (
-            <button 
+            <button
               onClick={handleBack}
               className="flex-1 py-4 rounded-lg bg-[#E0E0E0] border-none text-black font-medium text-[16px] hover:bg-[#F09425] hover:text-[#FFFFFF] transition-colors flex items-center justify-center gap-2 shadow-sm order-2 md:order-1 cursor-pointer"
             >
@@ -222,12 +222,12 @@ export default function SurveyPage() {
               Preview
             </button>
           )}
-          <button 
+          <button
             onClick={handleNext}
             disabled={!currentAnswer}
             className={`${currentQuestionIndex === 0 ? 'w-full' : 'flex-1'} py-4 rounded-lg bg-[#F09425] text-white font-medium text-[16px] hover:bg-[#e08820] cursor-pointer transition-colors flex items-center justify-center gap-2 shadow-sm order-1 md:order-2`}
           >
-            {isLastQuestion ? "Continue to report" : "Next"} 
+            {isLastQuestion ? "Continue to report" : "Next"}
             {!isLastQuestion && <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>}
           </button>
         </div>
@@ -263,20 +263,20 @@ export default function SurveyPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col gap-2">
               <label className="text-[14px] font-bold text-[#374151]">First Name</label>
-              <input 
-                type="text" 
-                placeholder="e.g. Sarah Mitchell" 
+              <input
+                type="text"
+                placeholder="e.g. Sarah Mitchell"
                 required
-                className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
+                className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium"
               />
             </div>
             <div className="flex flex-col gap-2">
               <label className="text-[14px] font-bold text-[#374151]">Last Name</label>
-              <input 
-                type="text" 
-                placeholder="e.g. Sarah Mitchell" 
+              <input
+                type="text"
+                placeholder="e.g. Sarah Mitchell"
                 required
-                className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
+                className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium"
               />
             </div>
           </div>
@@ -284,33 +284,33 @@ export default function SurveyPage() {
           {/* Work Email */}
           <div className="flex flex-col gap-2">
             <label className="text-[14px] font-bold text-[#374151]">Work Email</label>
-            <input 
-              type="email" 
-              placeholder="e.g. sarah@company.com" 
+            <input
+              type="email"
+              placeholder="e.g. sarah@company.com"
               required
-              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
+              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium"
             />
           </div>
 
           {/* Company Name */}
           <div className="flex flex-col gap-2">
             <label className="text-[14px] font-bold text-[#374151]">Company Name</label>
-            <input 
-              type="text" 
-              placeholder="e.g. Meridian Advisory Group" 
+            <input
+              type="text"
+              placeholder="e.g. Meridian Advisory Group"
               required
-              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
+              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium"
             />
           </div>
 
           {/* Role / Position */}
           <div className="flex flex-col gap-2">
             <label className="text-[14px] font-bold text-[#374151]">Role / Position</label>
-            <input 
-              type="text" 
-              placeholder="e.g. CEO, Operations Director" 
+            <input
+              type="text"
+              placeholder="e.g. CEO, Operations Director"
               required
-              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
+              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium"
             />
           </div>
 
@@ -318,7 +318,7 @@ export default function SurveyPage() {
           <div className="flex flex-col gap-2">
             <label className="text-[14px] font-bold text-[#374151]">Industry</label>
             <div className="relative">
-              <select 
+              <select
                 defaultValue=""
                 required
                 className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white text-gray-500 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] appearance-none text-[15px] cursor-pointer"
@@ -338,11 +338,11 @@ export default function SurveyPage() {
           {/* Goals */}
           <div className="flex flex-col gap-3 mt-4">
             <label className="text-[15px] font-bold text-[#374151] mb-1">What's your main goal for this assessment?</label>
-            
+
             {goals.map((goal) => {
               const isSelected = selectedGoal === goal;
               return (
-                <label 
+                <label
                   key={goal}
                   className="flex items-center justify-between p-4 rounded-md border border-gray-200 bg-white cursor-pointer hover:border-[#F09425] transition-colors"
                   onClick={() => setSelectedGoal(goal)}
@@ -357,14 +357,14 @@ export default function SurveyPage() {
               );
             })}
           </div>
-            
+
           <button type="submit" className="w-full mt-6 py-4 rounded-lg bg-[#F09425] text-white font-medium text-[16px] hover:bg-[#e08820] transition-colors flex items-center justify-center gap-2 shadow-sm">
-            Continue Begin Diagnostic 
+            Continue Begin Diagnostic
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
           </button>
         </form>
       </div>
-      
+
       {/* spacer to accommodate the button inside form now */}
       <div className="h-20"></div>
     </div>

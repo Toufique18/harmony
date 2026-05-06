@@ -24,14 +24,14 @@ export default function Partner() {
 
     const scroll = () => {
       if (!scrollContainer) return;
-      
+
       scrollPosition += scrollSpeed;
-      
+
       // Reset for seamless loop
       if (scrollPosition >= scrollContainer.scrollWidth / 2) {
         scrollPosition = 0;
       }
-      
+
       scrollContainer.scrollLeft = scrollPosition;
       animationId = requestAnimationFrame(scroll);
     };
@@ -60,9 +60,9 @@ export default function Partner() {
     <section className="w-full overflow-hidden bg-white py-8 md:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-2 text-center">
-          <h2 className="text-xl font-display text-[#000E14] md:text-xl lg:text-xl font-Playfair">Harmony<span className="italic ">360</span> is <span className="italic text-[#4978BC]">Trusted</span> By  
+          <h2 className="text-xl font-display text-[#000E14] md:text-xl lg:text-xl font-Playfair">Harmony<span className="italic ">360</span> is <span className="italic text-[#4978BC]">Trusted</span> By
           </h2>
-          
+
         </div>
 
         <div className="relative">

@@ -5,8 +5,8 @@ export default function Diagnostic() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-        <button className="text-sm md:text-sm rounded-xl text-[#494949] border-[#F0F0F0] mb-3 shadow-sm px-2 py-1">THE PROCESS</button>
-          
+          <button className="text-sm md:text-sm rounded-xl text-[#494949] border-[#F0F0F0] mb-3 shadow-sm px-2 py-1">THE PROCESS</button>
+
           <h2 className="text-2xl md:text-5xl font-serif font-bold text-[#252525] mb-4">
             How the Diagnostic <span className="italic text-[#426DAB]">Works</span>
           </h2>
@@ -22,7 +22,7 @@ export default function Diagnostic() {
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-5xl font-bold text-gray-200">01</span>
-                
+
               </div>
               <h3 className="text-[1rem] font-semibold text-[#252525] mb-1">Enter Your Details</h3>
               <p className="text-[#5f5e5e] text-xs">
@@ -36,7 +36,7 @@ export default function Diagnostic() {
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-5xl font-bold text-gray-200">02</span>
-                
+
               </div>
               <h3 className="text-[1rem] font-semibold text-[#252525] mb-1">Answer 8 Questions</h3>
               <p className="text-[#5f5e5e] text-xs">
@@ -50,7 +50,7 @@ export default function Diagnostic() {
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-5xl font-bold text-gray-200">03</span>
-                
+
               </div>
               <h3 className="text-[1rem] font-semibold text-[#252525] mb-1">Scores Are Calculated</h3>
               <p className="text-[#5f5e5e] text-xs">
@@ -64,7 +64,7 @@ export default function Diagnostic() {
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-5xl font-bold text-gray-200">04</span>
-                
+
               </div>
               <h3 className="text-[1rem] font-semibold text-[#252525] mb-1">Your Report Is Generated</h3>
               <p className="text-[#5f5e5e] text-xs">

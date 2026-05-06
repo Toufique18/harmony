@@ -70,7 +70,7 @@ export default function ResultPage() {
             <div className="p-6 md:p-12 bg-white max-w-[1200px] mx-auto">
 
                 {/* Four Dimension Scores Section */}
-                <Scores/>
+                <Scores />
 
                 {/* Data Analysis Section */}
                 <section className="mb-16">
@@ -140,23 +140,23 @@ export default function ResultPage() {
                 </section>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-10">
-                        <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col">
-                            <p className='text-[#008900] text-sm'>Where You're Strong</p>
-                            <h4 className='text-[#252525] text-xl font-medium py-2'>Customer Journey Consistency</h4>
-                            <p className="text-sm text-[#4B5563] leading-relaxed">
-                                Your strongest dimension at 16/20 (80%). This area is contributing positively to your overall brand experience and provides a foundation to build from.
-                            </p>
-                        </div>
-                        <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col">
-                            <p className='text-[#E64437] text-sm'>Where Alignment Breaks Down</p>
-                            <h4 className='text-[#252525] text-xl font-medium py-2'>Internal Process Alignmen</h4>
-                            <p className="text-sm text-[#4B5563] leading-relaxed">
-                                Your most critical gap at 2/20 (10%). Your internal systems are actively working against your desired customer experience, creating friction that limits execution regardless of your team's intent or effort.
-                            </p>
-                        </div>
-                        
-                       
+                    <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col">
+                        <p className='text-[#008900] text-sm'>Where You're Strong</p>
+                        <h4 className='text-[#252525] text-xl font-medium py-2'>Customer Journey Consistency</h4>
+                        <p className="text-sm text-[#4B5563] leading-relaxed">
+                            Your strongest dimension at 16/20 (80%). This area is contributing positively to your overall brand experience and provides a foundation to build from.
+                        </p>
                     </div>
+                    <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col">
+                        <p className='text-[#E64437] text-sm'>Where Alignment Breaks Down</p>
+                        <h4 className='text-[#252525] text-xl font-medium py-2'>Internal Process Alignmen</h4>
+                        <p className="text-sm text-[#4B5563] leading-relaxed">
+                            Your most critical gap at 2/20 (10%). Your internal systems are actively working against your desired customer experience, creating friction that limits execution regardless of your team's intent or effort.
+                        </p>
+                    </div>
+
+
+                </div>
 
                 {/* Industry Context · Hospitality / Hotel Tension */}
                 <section className='mb-8'>
@@ -249,51 +249,51 @@ export default function ResultPage() {
                 <Recommendations />
 
 
-                
+
 
 
             </div>
             <section className="bg-[#1F324F] w-full font-sans relative overflow-hidden py-2 md:py-5">
-                    
-                    <div
-                        className="absolute right-30 bottom-[-70] w-64 h-64 md:w-80 md:h-80 lg:w-150 lg:h-150 bg-no-repeat pointer-events-none"
-                        style={{
-                            backgroundImage: "url('/bgFor.svg')",
-                            backgroundSize: "contain",
-                            backgroundPosition: ""
-                        }}
-                    />
 
-                    <div className="max-w-7xl mx-auto py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 relative z-10">
+                <div
+                    className="absolute right-30 bottom-[-70] w-64 h-64 md:w-80 md:h-80 lg:w-150 lg:h-150 bg-no-repeat pointer-events-none"
+                    style={{
+                        backgroundImage: "url('/bgFor.svg')",
+                        backgroundSize: "contain",
+                        backgroundPosition: ""
+                    }}
+                />
 
-                        {/* Stack on mobile, row on desktop */}
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 lg:gap-12">
+                <div className="max-w-7xl mx-auto py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 relative z-10">
 
-                            {/* Left Content - Full width on mobile, half on desktop */}
-                            <div className="w-full md:w-1/2 text-center md:text-left">
-                                <button className="text-xs sm:text-sm text-[#FFFFFF] rounded-full bg-white/5 backdrop-blur-sm border border-white/5 mb-4 shadow-sm px-3 py-1.5 sm:px-4 sm:py-1.5 inline-block">
-                                    Start Here Instant
-                                </button>
- 
-                                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 tracking-tight leading-tight">
-                                    Uncover the Root <span className="italic block sm:inline opacity-35">Cause Behind</span> These Gaps
-                                </h2>
+                    {/* Stack on mobile, row on desktop */}
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 lg:gap-12">
 
-                                <p className="text-base sm:text-base text-[#B5B5B5] leading-relaxed max-w-lg mx-auto md:mx-0">
-                                    Upgrade to the Full Harmony 360 Diagnostic to gain deeper insights across all alignment areas and receive a structured action plan tailored to your organization.
-                                </p>
-                            </div>
+                        {/* Left Content - Full width on mobile, half on desktop */}
+                        <div className="w-full md:w-1/2 text-center md:text-left">
+                            <button className="text-xs sm:text-sm text-[#FFFFFF] rounded-full bg-white/5 backdrop-blur-sm border border-white/5 mb-4 shadow-sm px-3 py-1.5 sm:px-4 sm:py-1.5 inline-block">
+                                Start Here Instant
+                            </button>
 
-                            {/* Right Button - Full width on mobile, auto on desktop */}
-                            <div className="w-full md:w-auto flex justify-center md:justify-end">
-                                <button className="px-4 sm:px-6 md:px-5 lg:px-6 py-2.5 sm:py-3 rounded-lg border-none bg-[#FFFFFF] text-[#2B2B2B] text-sm sm:text-base md:text-sm lg:text-lg font-sans font-semibold transition-all hover:scale-105 active:scale-95 whitespace-nowrap cursor-pointer">
-                                    Upgrade to Full Harmony 360 
-                                </button>
-                            </div>
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 tracking-tight leading-tight">
+                                Uncover the Root <span className="italic block sm:inline opacity-35">Cause Behind</span> These Gaps
+                            </h2>
 
+                            <p className="text-base sm:text-base text-[#B5B5B5] leading-relaxed max-w-lg mx-auto md:mx-0">
+                                Upgrade to the Full Harmony 360 Diagnostic to gain deeper insights across all alignment areas and receive a structured action plan tailored to your organization.
+                            </p>
                         </div>
+
+                        {/* Right Button - Full width on mobile, auto on desktop */}
+                        <div className="w-full md:w-auto flex justify-center md:justify-end">
+                            <button className="px-4 sm:px-6 md:px-5 lg:px-6 py-2.5 sm:py-3 rounded-lg border-none bg-[#FFFFFF] text-[#2B2B2B] text-sm sm:text-base md:text-sm lg:text-lg font-sans font-semibold transition-all hover:scale-105 active:scale-95 whitespace-nowrap cursor-pointer">
+                                Upgrade to Full Harmony 360
+                            </button>
+                        </div>
+
                     </div>
-                </section>
+                </div>
+            </section>
         </div>
     );
 } 
