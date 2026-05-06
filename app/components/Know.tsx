@@ -2,7 +2,7 @@ export default function Know(){
 
     return(
 
-        <section className="bg-[#1F324F] w-full font-sans relative overflow-hidden">
+        <section className="bg-[#1F324F] w-full font-sans relative overflow-hidden py-2 md:py-5">
   {/* Background Image - Top Right Corner */}
   <div 
     className="absolute top-[-250] right-0 w-64 h-64 md:w-80 md:h-80 lg:w-150 lg:h-150 bg-no-repeat bg-top-right pointer-events-none"

@@ -107,6 +107,12 @@ export default function SurveyPage() {
     }
   };
 
+  const handleBack = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(prev => prev - 1);
+    }
+  };
+
   const handleOptionSelect = (option: string) => {
     setAnswers(prev => ({ ...prev, [currentQuestionIndex]: option }));
   };
@@ -122,7 +128,6 @@ export default function SurveyPage() {
         <div className="flex gap-2 mb-8">
           <div className="h-1.5 w-10 md:w-12 bg-[#4A6B9C] rounded-full"></div>
           <div className="h-1.5 w-10 md:w-12 bg-[#4A6B9C] rounded-full"></div>
-          <div className="h-1.5 w-10 md:w-12 bg-[#E5E7EB] rounded-full"></div>
           <div className="h-1.5 w-10 md:w-12 bg-[#E5E7EB] rounded-full"></div>
         </div>
 
@@ -180,14 +185,25 @@ export default function SurveyPage() {
           </div>
         </div>
         
-        <button 
-          onClick={handleNext}
-          disabled={!currentAnswer}
-          className="w-full mt-6 mb-20 py-4 rounded-lg bg-[#F09425] text-white font-medium text-[16px] hover:bg-[#e08820] disabled:bg-[#fbdca8] disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2 shadow-sm"
-        >
-          {isLastQuestion ? "Submit" : "Next"} 
-          {!isLastQuestion && <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>}
-        </button>
+        <div className="flex flex-col md:flex-row justify-between gap-4 mt-6 mb-20">
+          {currentQuestionIndex > 0 && (
+            <button 
+              onClick={handleBack}
+              className="flex-1 py-4 rounded-lg bg-[#E0E0E0] border-none text-black font-medium text-[16px] hover:bg-[#F09425] hover:text-[#FFFFFF] transition-colors flex items-center justify-center gap-2 shadow-sm order-2 md:order-1 cursor-pointer"
+            >
+              <svg className="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+              Preview
+            </button>
+          )}
+          <button 
+            onClick={handleNext}
+            disabled={!currentAnswer}
+            className={`${currentQuestionIndex === 0 ? 'w-full' : 'flex-1'} py-4 rounded-lg bg-[#F09425] text-white font-medium text-[16px] hover:bg-[#e08820] cursor-pointer transition-colors flex items-center justify-center gap-2 shadow-sm order-1 md:order-2`}
+          >
+            {isLastQuestion ? "Continue to report" : "Next"} 
+            {!isLastQuestion && <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>}
+          </button>
+        </div>
       </div>
     );
   }
@@ -197,7 +213,6 @@ export default function SurveyPage() {
       {/* Progress */}
       <div className="flex gap-2 mb-8">
         <div className="h-1.5 w-10 md:w-12 bg-[#4A6B9C] rounded-full"></div>
-        <div className="h-1.5 w-10 md:w-12 bg-[#E5E7EB] rounded-full"></div>
         <div className="h-1.5 w-10 md:w-12 bg-[#E5E7EB] rounded-full"></div>
         <div className="h-1.5 w-10 md:w-12 bg-[#E5E7EB] rounded-full"></div>
       </div>
