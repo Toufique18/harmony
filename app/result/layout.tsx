@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Footer from "../components/Footer";
-import Link from "next/link";
+import ResultNavbar from "../components/ResultNavbar";
+
+export const metadata: Metadata = {
+    title: "Report Results",
+};
+
 export default function ResultLayout({
     children,
 }: {
@@ -7,29 +13,15 @@ export default function ResultLayout({
 }) {
     return (
         <>
-            <nav className="w-full bg-[#FFFFFF] border-none top-0 z-50 sticky">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-                    {/* Logo */}
-                    <img src="harmony-logo.png" alt="harmony" />
-
-
-                    <div className="flex gap-2">
-                        <button className="px-3 lg:px-5 py-2.5 border border-[#F09425] text-[#F09425] hover:bg-[#F09425] hover:text-white text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer rounded-[4px]">
-                            Download PDF
-                        </button>
-                        <Link href="/survey" className="px-3 lg:px-5 py-2.5 rounded-[4px] text-[#FFFFFF] bg-[#F09425] text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer">
-                            Start Again
-                        </Link>
-                    </div>
-
-
-
+            <ResultNavbar />
+            <div className="min-h-screen bg-[#FFFFFF] flex justify-center py-10 md:py-16 print:py-0 print:block">
+                <div className="w-full max-w-[1200px] print:max-w-none">
+                    {children}
                 </div>
-            </nav>
-            <div className="min-h-screen bg-[#FFFFFF] flex justify-center py-10 md:py-16">
-                {children}
             </div>
-            <Footer />
+            <div className="print:hidden">
+                <Footer />
+            </div>
         </>
     );
 }
