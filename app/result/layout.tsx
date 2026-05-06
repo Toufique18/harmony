@@ -14,10 +14,10 @@ export default function ResultLayout({
 
 
         <div className="flex gap-2">
-            <button className="px-3 lg:px-5 py-2.5 border border-[#F09425] text-[#F09425] hover:bg-[#F09425] hover:text-white text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer">
+            <button className="px-3 lg:px-5 py-2.5 border border-[#F09425] text-[#F09425] hover:bg-[#F09425] hover:text-white text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer rounded-[4px]">
             Download PDF
           </button>
-          <Link href="/survey" className="px-3 lg:px-5 py-2.5  text-[#FFFFFF] bg-[#F09425] text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer">
+          <Link href="/survey" className="px-3 lg:px-5 py-2.5 rounded-[4px] text-[#FFFFFF] bg-[#F09425] text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer">
             Start Again
           </Link>
         </div>
