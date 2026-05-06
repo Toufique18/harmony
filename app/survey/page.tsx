@@ -267,7 +267,7 @@ export default function SurveyPage() {
                 type="text" 
                 placeholder="e.g. Sarah Mitchell" 
                 required
-                className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px]" 
+                className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -276,7 +276,7 @@ export default function SurveyPage() {
                 type="text" 
                 placeholder="e.g. Sarah Mitchell" 
                 required
-                className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px]" 
+                className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
               />
             </div>
           </div>
@@ -288,7 +288,7 @@ export default function SurveyPage() {
               type="email" 
               placeholder="e.g. sarah@company.com" 
               required
-              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px]" 
+              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
             />
           </div>
 
@@ -299,7 +299,7 @@ export default function SurveyPage() {
               type="text" 
               placeholder="e.g. Meridian Advisory Group" 
               required
-              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px]" 
+              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
             />
           </div>
 
@@ -310,7 +310,7 @@ export default function SurveyPage() {
               type="text" 
               placeholder="e.g. CEO, Operations Director" 
               required
-              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px]" 
+              className="w-full px-4 py-3.5 rounded-md border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium" 
             />
           </div>
 
