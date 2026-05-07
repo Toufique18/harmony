@@ -1,27 +1,44 @@
 import type { Metadata } from "next";
+import DownloadPdfButton from "../components/DownloadPdfBtn";
 import Footer from "../components/Footer";
-import ResultNavbar from "../components/ResultNavbar";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Report Results",
+  title: "Harmony | Report",
+  description: "View your personalized Brand & Culture Alignment Snapshot and discover actionable insights for your organization.",
+  icons: {
+    icon: "/small-logo.svg",
+  },
 };
-
 export default function ResultLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        <>
-            <ResultNavbar />
-            <div className="min-h-screen bg-[#FFFFFF] flex justify-center py-10 md:py-16 print:py-0 print:block">
-                <div className="w-full max-w-[1200px] print:max-w-none">
-                    {children}
-                </div>
-            </div>
-            <div className="print:hidden">
-                <Footer />
-            </div>
-        </>
-    );
+  return (
+    <>
+      <nav className="w-full bg-[#FFFFFF] border-none top-0 z-50 sticky">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/">
+            <img src="/harmony-logo.png" alt="harmony" className="hidden md:block" />
+            <img src="/small-logo.svg" alt="harmony" className="block md:hidden" />
+          </Link>
+          <div className="flex gap-2">
+            <DownloadPdfButton />
+            <Link
+              href="/survey"
+              className="px-3 lg:px-5 py-2.5 rounded-[4px] text-[#FFFFFF] bg-[#F09425] text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer"
+            >
+              Start Again
+            </Link>
+          </div>
+        </div>
+      </nav>
+      <div className="min-h-screen bg-[#FFFFFF] flex justify-center py-10 md:py-16">
+        {children}
+      </div>
+      <Footer />
+    </>
+  );
 }

@@ -30,14 +30,11 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Harmony | Home",
-    template: "%s | Harmony"
-  },
-  description: "Discover where your Brand, Culture, and Operations are out of sync.",
+  title: "Harmony | Home",
+  description: "Uncover the gaps between your brand identity and organizational culture with Harmony's 360 diagnostic tools.",
   icons: {
-    icon: "/harmony-logo.png",
-  }
+    icon: "/small-logo.svg",
+  },
 };
 
 export default function RootLayout({
