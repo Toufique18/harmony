@@ -105,6 +105,7 @@ export default function SurveyPageClient({
       .flatMap((dimension) =>
         dimension.questions.map((question) => ({
           ...question,
+          id: question.id || (question as any)._id,
           category: dimension.title,
           dimensionTitle: dimension.title,
         }))
@@ -572,9 +573,8 @@ export default function SurveyPageClient({
               <div
                 className="h-full bg-[#F09425] rounded-full transition-all duration-300"
                 style={{
-                  width: `${
-                    ((currentQuestionIndex + 1) / flatQuestions.length) * 100
-                  }%`,
+                  width: `${((currentQuestionIndex + 1) / flatQuestions.length) * 100
+                    }%`,
                 }}
               ></div>
             </div>
@@ -605,11 +605,10 @@ export default function SurveyPageClient({
                     </span>
 
                     <div
-                      className={`w-5 h-5 rounded-[4px] flex items-center justify-center transition-colors ${
-                        isSelected
-                          ? "bg-[#F09425]"
-                          : "border border-gray-300 bg-white"
-                      }`}
+                      className={`w-5 h-5 rounded-[4px] flex items-center justify-center transition-colors ${isSelected
+                        ? "bg-[#F09425]"
+                        : "border border-gray-300 bg-white"
+                        }`}
                     >
                       {isSelected && (
                         <svg
@@ -663,9 +662,8 @@ export default function SurveyPageClient({
             onClick={handleNext}
             type="button"
             disabled={!currentAnswer || isAnswerSubmitting || isLoading}
-            className={`${
-              currentQuestionIndex === 0 ? "w-full" : "flex-1"
-            } py-4 rounded-lg bg-[#F09425] text-white font-medium text-[16px] hover:bg-[#e08820] cursor-pointer transition-colors flex items-center justify-center gap-2 shadow-sm order-1 md:order-2 disabled:opacity-60 disabled:cursor-not-allowed`}
+            className={`${currentQuestionIndex === 0 ? "w-full" : "flex-1"
+              } py-4 rounded-lg bg-[#F09425] text-white font-medium text-[16px] hover:bg-[#e08820] cursor-pointer transition-colors flex items-center justify-center gap-2 shadow-sm order-1 md:order-2 disabled:opacity-60 disabled:cursor-not-allowed`}
           >
             {isLoading
               ? "Generating Report..."
@@ -733,9 +731,8 @@ export default function SurveyPageClient({
                 value={formData.firstName}
                 onChange={handleInputChange}
                 placeholder="e.g. Sarah"
-                className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${
-                  errors.firstName ? "border-red-500" : "border-gray-200"
-                }`}
+                className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${errors.firstName ? "border-red-500" : "border-gray-200"
+                  }`}
               />
 
               {errors.firstName && (
@@ -754,9 +751,8 @@ export default function SurveyPageClient({
                 value={formData.lastName}
                 onChange={handleInputChange}
                 placeholder="e.g. Mitchell"
-                className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${
-                  errors.lastName ? "border-red-500" : "border-gray-200"
-                }`}
+                className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${errors.lastName ? "border-red-500" : "border-gray-200"
+                  }`}
               />
 
               {errors.lastName && (
@@ -776,9 +772,8 @@ export default function SurveyPageClient({
               value={formData.email}
               onChange={handleInputChange}
               placeholder="e.g. sarah@company.com"
-              className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${
-                errors.email ? "border-red-500" : "border-gray-200"
-              }`}
+              className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${errors.email ? "border-red-500" : "border-gray-200"
+                }`}
             />
 
             {errors.email && (
@@ -797,9 +792,8 @@ export default function SurveyPageClient({
               value={formData.companyName}
               onChange={handleInputChange}
               placeholder="e.g. Meridian Advisory Group"
-              className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${
-                errors.companyName ? "border-red-500" : "border-gray-200"
-              }`}
+              className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${errors.companyName ? "border-red-500" : "border-gray-200"
+                }`}
             />
 
             {errors.companyName && (
@@ -818,9 +812,8 @@ export default function SurveyPageClient({
               value={formData.role}
               onChange={handleInputChange}
               placeholder="e.g. CEO, Operations Director"
-              className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${
-                errors.role ? "border-red-500" : "border-gray-200"
-              }`}
+              className={`w-full px-4 py-3.5 rounded-md border bg-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] text-[15px] text-black font-medium ${errors.role ? "border-red-500" : "border-gray-200"
+                }`}
             />
 
             {errors.role && (
@@ -838,9 +831,8 @@ export default function SurveyPageClient({
                 name="industry"
                 value={formData.industry}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3.5 rounded-md border bg-white text-gray-500 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] appearance-none text-[15px] cursor-pointer ${
-                  errors.industry ? "border-red-500" : "border-gray-200"
-                }`}
+                className={`w-full px-4 py-3.5 rounded-md border bg-white text-gray-500 focus:outline-none focus:ring-1 focus:ring-[#4A6B9C] appearance-none text-[15px] cursor-pointer ${errors.industry ? "border-red-500" : "border-gray-200"
+                  }`}
               >
                 <option value="" disabled>
                   Select your industry
@@ -907,11 +899,10 @@ export default function SurveyPageClient({
                   <span className="text-[15px] text-[#374151]">{goal}</span>
 
                   <div
-                    className={`w-5 h-5 rounded-[4px] flex items-center justify-center transition-colors ${
-                      isSelected
-                        ? "bg-[#F09425]"
-                        : "border border-gray-300 bg-white"
-                    }`}
+                    className={`w-5 h-5 rounded-[4px] flex items-center justify-center transition-colors ${isSelected
+                      ? "bg-[#F09425]"
+                      : "border border-gray-300 bg-white"
+                      }`}
                   >
                     {isSelected && (
                       <svg

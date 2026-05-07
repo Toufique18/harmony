@@ -1,6 +1,15 @@
+import type { Metadata } from "next";
 import DownloadPdfButton from "../components/DownloadPdfBtn";
 import Footer from "../components/Footer";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Harmony | Report",
+  description: "View your personalized Brand & Culture Alignment Snapshot and discover actionable insights for your organization.",
+  icons: {
+    icon: "/small-logo.svg",
+  },
+};
 export default function ResultLayout({
   children,
 }: {
@@ -12,7 +21,8 @@ export default function ResultLayout({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/">
-            <img src="./harmony-logo.png" alt="harmony" />
+            <img src="/harmony-logo.png" alt="harmony" className="hidden md:block" />
+            <img src="/small-logo.svg" alt="harmony" className="block md:hidden" />
           </Link>
           <div className="flex gap-2">
             <DownloadPdfButton />

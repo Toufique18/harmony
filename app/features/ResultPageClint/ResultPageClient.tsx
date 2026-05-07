@@ -118,20 +118,20 @@ export default function ResultPageClient({ results }: any) {
 
         <div className="relative max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center p-6 md:p-12">
           <div>
-            <h1 className="text-3xl md:text-[48px] font-bold leading-tight font-serif">
-              Brand & Culture <br />
-              Alignment <span className="italic opacity-40">Snapshot</span>
+            <h1 className="text-2xl md:text-[48px] font-bold leading-tight font-serif">
+              Brand & Culture <br className="hidden lg:block"/>
+              Alignment <span className="italic opacity-40">Snapshot</span> 
             </h1>
           </div>
 
           <div className="mt-6 md:mt-0 text-right">
-            <div className="text-5xl md:text-6xl font-bold">
+            <div className="text-3xl md:text-6xl font-bold"> 
               {normalizedScore}
-              <span className="text-2xl md:text-3xl font-normal opacity-60">
+              <span className="text-lg md:text-3xl font-normal opacity-60">
                 /80
               </span>
             </div>
-            <div className="text-sm md:text-base opacity-70 mt-1 uppercase tracking-wider">
+            <div className="text-sm md:text-base text-center lg:text-right opacity-70 mt-1 uppercase tracking-wider">
               {finalPercentage}% Alignment Score
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function ResultPageClient({ results }: any) {
           </div>
 
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-8"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-8"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             Your Four Dimension Scores
@@ -249,7 +249,7 @@ export default function ResultPageClient({ results }: any) {
             Data Analysis
           </div>
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-8"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-8"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             What Your Numbers Reveal
@@ -317,14 +317,14 @@ export default function ResultPageClient({ results }: any) {
             What This Means
           </div>
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-6"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-6"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             {band?.diagnosis || "N/A"} · {band?.maturityInterpretation || "N/A"}
           </h2>
 
           <div className="bg-[#F8F8F8] rounded-sm p-8 border-l-4 border-[#000000] mb-6">
-            <p className="text-[#374151] text-lg md:text-xl italic font-medium leading-relaxed">
+            <p className="text-[#374151] text-sm md:text-xl italic font-medium leading-relaxed">
               "{result?.primaryTensionBody || band?.tension || "N/A"}"
             </p>
           </div>
@@ -340,14 +340,14 @@ export default function ResultPageClient({ results }: any) {
             Auto-Generated Insight
           </div>
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-6"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-6"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             Diagnostic Interpretation · Based on Your Results
           </h2>
 
           <div className="bg-[#F8F8F8] rounded-sm p-8 border-l-4 border-[#FA981B]">
-            <p className="text-[#374151] text-lg md:text-xl font-medium leading-relaxed">
+            <p className="text-[#374151] text-sm md:text-xl font-medium leading-relaxed">
               Your results place you in the{" "}
               <span className="text-[#1C1C1C] font-semibold">
                 {band?.diagnosis || "N/A"}
@@ -408,7 +408,7 @@ export default function ResultPageClient({ results }: any) {
             Industry Context · {lead?.industry || "General"}
           </div>
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-6"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-6"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             {result?.primaryTensionTitle ||
@@ -416,7 +416,7 @@ export default function ResultPageClient({ results }: any) {
           </h2>
 
           <div className="bg-[#F8F8F8] rounded-sm p-8 border-l-4 border-[#E64437]">
-            <p className="text-[#374151] text-lg md:text-xl italic font-medium leading-relaxed">
+            <p className="text-[#374151] text-sm md:text-xl italic font-medium leading-relaxed">
               {result?.primaryTensionBody || band?.tension || "N/A"}
             </p>
           </div>
@@ -428,7 +428,7 @@ export default function ResultPageClient({ results }: any) {
             Industry Context · {lead?.industry || "General"}
           </div>
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-6"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-6"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             {result?.customerGoalTitle ||
@@ -436,7 +436,7 @@ export default function ResultPageClient({ results }: any) {
           </h2>
 
           <div className="bg-[#F8F8F8] rounded-sm p-8 border-l-4 border-[#4978BC]">
-            <p className="text-[#374151] text-lg md:text-xl italic font-medium leading-relaxed">
+            <p className="text-[#374151] text-sm md:text-xl italic font-medium leading-relaxed">
               {result?.customerGoalBody ||
                 "Your selected goal helps determine which alignment gaps should be prioritized first."}
             </p>
@@ -449,14 +449,14 @@ export default function ResultPageClient({ results }: any) {
             Industry Context · {lead?.industry || "General"}
           </div>
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-6"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-6"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             Why This Matters in Your Sector
           </h2>
 
           <div className="bg-[#F8F8F8] rounded-sm p-8 border-l-4 border-[#FA981B]">
-            <p className="text-[#374151] text-lg md:text-xl italic font-medium leading-relaxed">
+            <p className="text-[#374151] text-sm md:text-xl italic font-medium leading-relaxed">
               In the {lead?.industry || "selected"} sector, every touchpoint
               shapes trust. A single inconsistent interaction can affect
               customer experience, employee confidence, and long-term brand
@@ -472,7 +472,7 @@ export default function ResultPageClient({ results }: any) {
           </div>
 
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-10"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-10"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             Where Each Dimension Stands
@@ -486,13 +486,16 @@ export default function ResultPageClient({ results }: any) {
               return (
                 <div
                   key={score.key || index}
-                  className="bg-white border rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col"
+                  className="bg-white border rounded-xl  shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col"
                   style={{ borderColor: color }}
                 >
-                  <div className="flex items-start justify-between gap-4 mb-4">
+                  <div className="rounded-xl" style={{ 
+    background: `rgba(${parseInt(color.slice(1,3), 16)}, ${parseInt(color.slice(3,5), 16)}, ${parseInt(color.slice(5,7), 16)}, 0.1)` 
+  }}>
+                    <div className="flex items-start justify-between gap-4 mb-4 px-8 pt-8" >
                     <div>
                       <p
-                        className="text-sm mb-2"
+                        className="text-xs mb-2"
                         style={{
                           color,
                         }}
@@ -500,7 +503,7 @@ export default function ResultPageClient({ results }: any) {
                         Dimension 0{index + 1}
                       </p>
 
-                      <h4 className="text-[#252525] text-xl font-medium">
+                      <h4 className="text-[#252525] text-sm md:text-xl font-medium" style={{ color: color }}>
                         {score.title}
                       </h4>
                     </div>
@@ -515,12 +518,15 @@ export default function ResultPageClient({ results }: any) {
                       <span className="text-base font-normal">/20</span>
                     </div>
                   </div>
+                  </div>
 
-                  <p className="text-sm text-[#4B5563] leading-relaxed mb-4">
+                  <div className="p-8">
+
+                    <p className="text-sm text-[#4B5563] leading-relaxed ">
                     {getDimensionInsight(score20)}
                   </p>
 
-                  <div className="text-xs font-bold text-[#252525] uppercase mb-2">
+                  <div className="text-xs font-bold text-[#252525] uppercase mt-2 mb-2">
                     Operational Reality
                   </div>
 
@@ -532,13 +538,16 @@ export default function ResultPageClient({ results }: any) {
                     </li>
                   </ul>
 
-                  <div className="text-xs font-bold text-[#252525] uppercase mb-2">
+                  <div className="text-xs font-bold text-[#252525] uppercase mt-2 mb-2">
                     Next Step
                   </div>
 
                   <p className="text-sm text-[#4B5563] leading-relaxed">
                     {getDimensionNextStep(score20)}
                   </p>
+                  </div>
+                      
+                  
                 </div>
               );
             })}
@@ -551,7 +560,7 @@ export default function ResultPageClient({ results }: any) {
             Why This Matters
           </div>
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-10"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-10"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             Business Impact of Misalignment
@@ -600,7 +609,7 @@ export default function ResultPageClient({ results }: any) {
           </div>
 
           <h2
-            className="text-2xl md:text-[28px] font-medium text-[#252525] mb-10"
+            className="text-xl md:text-[28px] font-medium text-[#252525] mb-10"
             style={{ fontFamily: "var(--font-display), serif" }}
           >
             Recommendations
@@ -667,16 +676,13 @@ export default function ResultPageClient({ results }: any) {
                 Start Here Instant
               </button>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 tracking-tight leading-tight">
-                Uncover the Root{" "}
-                <span className="italic block sm:inline opacity-35">
-                  Cause Behind
-                </span>{" "}
-                These Gaps
+              <h2 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 tracking-tight leading-tight">
+                Uncover the Root <span className="italic opacity-35">Cause Behind </span> These Gaps
+                
               </h2>
 
               <p className="text-base sm:text-base text-[#B5B5B5] leading-relaxed max-w-lg mx-auto md:mx-0">
-                Upgrade to the Full Harmony 360 Diagnostic to gain deeper
+                Upgrade to the Full Harmony 360 Diagnostic to gain deeper 
                 insights across all alignment areas and receive a structured
                 action plan tailored to your organization.
               </p>
