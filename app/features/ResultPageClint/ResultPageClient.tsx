@@ -11,7 +11,7 @@ export default function ResultPageClient({ results }: any) {
   const finalPercentage = result?.finalPercentage || 0;
 
   const fullName = `${lead?.firstName || ""} ${lead?.lastName || ""}`.trim();
-
+  console.log(result);
   const date = new Date(
     results?.completedAt ||
       result?.createdAt ||
@@ -621,10 +621,11 @@ export default function ResultPageClient({ results }: any) {
                 1
               </div>
               <div className="p-4 text-sm text-[#4B5563] leading-relaxed">
-                <strong className="text-[#252525]">Clarify Expectations</strong>
+                <strong className="text-[#252525]">
+                  {result?.customerGoalTitle}
+                </strong>
                 <br />
-                Establish a single, clearly articulated brand definition and
-                cascade it with leadership alignment.
+                {result?.customerGoalBody}
               </div>
             </div>
 
@@ -634,27 +635,14 @@ export default function ResultPageClient({ results }: any) {
               </div>
               <div className="p-4 text-sm text-[#4B5563] leading-relaxed">
                 <strong className="text-[#252525]">
-                  Align Internal Execution
+                  {result?.primaryTensionTitle}
                 </strong>
                 <br />
-                Connect every team’s daily operations to the brand promise
-                through structured reinforcement.
+                {result?.primaryTensionBody}
               </div>
             </div>
 
-            <div className="flex bg-[#F5F5F5]">
-              <div className="w-12 bg-[#222222] text-white flex items-center justify-center font-bold">
-                3
-              </div>
-              <div className="p-4 text-sm text-[#4B5563] leading-relaxed">
-                <strong className="text-[#252525]">
-                  Strengthen Consistency Across Touchpoints
-                </strong>
-                <br />
-                Map the full customer journey and standardize experience
-                delivery end-to-end.
-              </div>
-            </div>
+    
           </div>
         </section>
       </div>
