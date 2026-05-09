@@ -14,9 +14,9 @@ export default function ResultPageClient({ results }: any) {
   console.log(result);
   const date = new Date(
     results?.completedAt ||
-      result?.createdAt ||
-      results?.createdAt ||
-      new Date(),
+    result?.createdAt ||
+    results?.createdAt ||
+    new Date(),
   ).toLocaleDateString("en-GB", {
     day: "2-digit",
     month: "short",
@@ -119,13 +119,13 @@ export default function ResultPageClient({ results }: any) {
         <div className="relative max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center p-6 md:p-12">
           <div>
             <h1 className="text-2xl md:text-[48px] font-bold leading-tight font-serif">
-              Brand & Culture <br className="hidden lg:block"/>
-              Alignment <span className="italic opacity-40">Snapshot</span> 
+              Brand & Culture <br className="hidden lg:block" />
+              Alignment <span className="italic opacity-40">Snapshot</span>
             </h1>
           </div>
 
           <div className="mt-6 md:mt-0 text-right">
-            <div className="text-3xl md:text-6xl font-bold"> 
+            <div className="text-3xl md:text-6xl font-bold">
               {normalizedScore}
               <span className="text-lg md:text-3xl font-normal opacity-60">
                 /80
@@ -489,65 +489,65 @@ export default function ResultPageClient({ results }: any) {
                   className="bg-white border rounded-xl  shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col"
                   style={{ borderColor: color }}
                 >
-                  <div className="rounded-xl" style={{ 
-    background: `rgba(${parseInt(color.slice(1,3), 16)}, ${parseInt(color.slice(3,5), 16)}, ${parseInt(color.slice(5,7), 16)}, 0.1)` 
-  }}>
+                  <div className="rounded-xl" style={{
+                    background: `rgba(${parseInt(color.slice(1, 3), 16)}, ${parseInt(color.slice(3, 5), 16)}, ${parseInt(color.slice(5, 7), 16)}, 0.1)`
+                  }}>
                     <div className="flex items-start justify-between gap-4 mb-4 px-8 pt-8" >
-                    <div>
-                      <p
-                        className="text-xs mb-2"
+                      <div>
+                        <p
+                          className="text-xs mb-2"
+                          style={{
+                            color,
+                          }}
+                        >
+                          Dimension 0{index + 1}
+                        </p>
+
+                        <h4 className="text-[#252525] text-sm md:text-xl font-medium" style={{ color: color }}>
+                          {score.title}
+                        </h4>
+                      </div>
+
+                      <div
+                        className="text-[28px] font-bold"
                         style={{
                           color,
                         }}
                       >
-                        Dimension 0{index + 1}
-                      </p>
-
-                      <h4 className="text-[#252525] text-sm md:text-xl font-medium" style={{ color: color }}>
-                        {score.title}
-                      </h4>
+                        {score20}
+                        <span className="text-base font-normal">/20</span>
+                      </div>
                     </div>
-
-                    <div
-                      className="text-[28px] font-bold"
-                      style={{
-                        color,
-                      }}
-                    >
-                      {score20}
-                      <span className="text-base font-normal">/20</span>
-                    </div>
-                  </div>
                   </div>
 
                   <div className="p-8">
 
                     <p className="text-sm text-[#4B5563] leading-relaxed ">
-                    {getDimensionInsight(score20)}
-                  </p>
+                      {getDimensionInsight(score20)}
+                    </p>
 
-                  <div className="text-xs font-bold text-[#252525] uppercase mt-2 mb-2">
-                    Operational Reality
+                    <div className="text-xs font-bold text-[#252525] uppercase mt-2 mb-2">
+                      Operational Reality
+                    </div>
+
+                    <ul className="text-sm text-[#4B5563] leading-relaxed list-disc pl-5 mb-4">
+                      <li>Current score: {score20}/20</li>
+                      <li>Alignment percentage: {score.percentage}%</li>
+                      <li>
+                        Priority level based on comparative dimension performance
+                      </li>
+                    </ul>
+
+                    <div className="text-xs font-bold text-[#252525] uppercase mt-2 mb-2">
+                      Next Step
+                    </div>
+
+                    <p className="text-sm text-[#4B5563] leading-relaxed">
+                      {getDimensionNextStep(score20)}
+                    </p>
                   </div>
 
-                  <ul className="text-sm text-[#4B5563] leading-relaxed list-disc pl-5 mb-4">
-                    <li>Current score: {score20}/20</li>
-                    <li>Alignment percentage: {score.percentage}%</li>
-                    <li>
-                      Priority level based on comparative dimension performance
-                    </li>
-                  </ul>
 
-                  <div className="text-xs font-bold text-[#252525] uppercase mt-2 mb-2">
-                    Next Step
-                  </div>
-
-                  <p className="text-sm text-[#4B5563] leading-relaxed">
-                    {getDimensionNextStep(score20)}
-                  </p>
-                  </div>
-                      
-                  
                 </div>
               );
             })}
@@ -642,7 +642,7 @@ export default function ResultPageClient({ results }: any) {
               </div>
             </div>
 
-    
+
           </div>
         </section>
       </div>
@@ -665,20 +665,22 @@ export default function ResultPageClient({ results }: any) {
               </button>
 
               <h2 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 tracking-tight leading-tight">
-                Uncover the Root <span className="italic opacity-35">Cause Behind </span> These Gaps
-                
+                You've Seen the Gaps. Now <span className="italic opacity-35">Uncover What's Causing</span> Them
+
               </h2>
 
-              <p className="text-base sm:text-base text-[#B5B5B5] leading-relaxed max-w-lg mx-auto md:mx-0">
-                Upgrade to the Full Harmony 360 Diagnostic to gain deeper 
-                insights across all alignment areas and receive a structured
-                action plan tailored to your organization.
+              <p className="text-base sm:text-base text-[#B5B5B5] leading-relaxed max-w-2xl mx-auto md:mx-0">
+                Your Harmony 360 Lite report has identified where alignment is breaking down in your organization. But knowing where the problem exists is only the first step. The Full Harmony 360 Diagnostic goes deeper-revealing the root causes behind these gaps, how they are impacting your performance, and the exact actions required to fix them.
               </p>
-            </div>
-
+              <h4 className="text-base sm:text-base text-[#FFFFFF] font-semibold mt-5">With the Full Harmony 360, you will:</h4>
+              <p className="text-base sm:text-base text-[#B5B5B5] leading-relaxed max-w-2xl mx-auto md:mx-0">
+                Identify the underlying causes of misalignment across all 7 dimensions Uncover hidden friction between your brand, culture, and operations Receive targeted, actionable recommendations tailored to your business Gain a clear roadmap to improve consistency, performance, and customer experience
+              </p>
+            </div> 
+ 
             <div className="w-full md:w-auto flex justify-center md:justify-end">
               <button className="px-4 sm:px-6 md:px-5 lg:px-6 py-2.5 sm:py-3 rounded-lg border-none bg-[#FFFFFF] text-[#2B2B2B] text-sm sm:text-base md:text-sm lg:text-lg font-sans font-semibold transition-all hover:scale-105 active:scale-95 whitespace-nowrap cursor-pointer">
-                Upgrade to Full Harmony 360
+                Unlock Your Full Harmony 360 Report
               </button>
             </div>
           </div>

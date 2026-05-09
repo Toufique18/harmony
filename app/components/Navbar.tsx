@@ -1,12 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
 
   return (
     <>
@@ -14,21 +13,33 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/">
-            <img src="/harmony-logo.png" alt="harmony" className="hidden md:block" />
-            <img src="/small-logo.svg" alt="harmony" className="block md:hidden" />
+            <Image
+              src="/harmony-logo.png"
+              alt="harmony"
+              width={160}
+              height={50}
+              className="hidden md:block"
+            />
+
+            <Image
+              src="/small-logo.svg"
+              alt="harmony"
+              width={50}
+              height={50}
+              className="block md:hidden"
+            />
           </Link>
 
-
-          <Link href="/survey" className="px-3 lg:px-5 py-2.5 rounded-lg border border-[#F09425] text-[#F09425] hover:bg-[#F09425] hover:text-white text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95">
-            Get Start Free
+          <Link
+            href="/survey"
+            className="px-3 lg:px-5 py-2.5 rounded-lg border border-[#F09425] text-[#F09425] hover:bg-[#F09425] hover:text-white text-xs lg:text-sm font-bold transition-all hover:scale-105 active:scale-95"
+          >
+            Start Here
           </Link>
-
-
         </div>
       </nav>
 
       {/* Mobile Menu Overlay */}
-
     </>
   );
-} 
+}
