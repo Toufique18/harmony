@@ -37,7 +37,7 @@ export default function Know() {
 
           {/* Right Button - Full width on mobile, auto on desktop */}
           <div className="w-full md:w-auto flex justify-center md:justify-end">
-            <Link href="/survey" className="px-4 sm:px-6 md:px-5 lg:px-6 py-2.5 sm:py-3 rounded-lg border-none bg-[#FFFFFF] text-[#2B2B2B] text-sm sm:text-base md:text-sm lg:text-lg font-sans font-semibold transition-all hover:scale-105 active:scale-95 whitespace-nowrap">
+            <Link href="/survey" className="font-sans px-4 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs sm:text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D] whitespace-nowrap">
               Discover Your True Alignment Score →
             </Link>
           </div>
