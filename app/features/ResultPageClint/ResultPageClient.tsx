@@ -2,6 +2,7 @@
 "use client";
 
 export default function ResultPageClient({ results }: any) {
+  console.log(results);
   const lead = results?.lead || {};
   const result = results?.result || {};
   const band = result?.band || {};
@@ -14,9 +15,9 @@ export default function ResultPageClient({ results }: any) {
   console.log(result);
   const date = new Date(
     results?.completedAt ||
-    result?.createdAt ||
-    results?.createdAt ||
-    new Date(),
+      result?.createdAt ||
+      results?.createdAt ||
+      new Date(),
   ).toLocaleDateString("en-GB", {
     day: "2-digit",
     month: "short",
@@ -489,10 +490,13 @@ export default function ResultPageClient({ results }: any) {
                   className="bg-white border rounded-xl  shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col"
                   style={{ borderColor: color }}
                 >
-                  <div className="rounded-xl" style={{
-                    background: `rgba(${parseInt(color.slice(1, 3), 16)}, ${parseInt(color.slice(3, 5), 16)}, ${parseInt(color.slice(5, 7), 16)}, 0.1)`
-                  }}>
-                    <div className="flex items-start justify-between gap-4 mb-4 px-8 pt-8" >
+                  <div
+                    className="rounded-xl"
+                    style={{
+                      background: `rgba(${parseInt(color.slice(1, 3), 16)}, ${parseInt(color.slice(3, 5), 16)}, ${parseInt(color.slice(5, 7), 16)}, 0.1)`,
+                    }}
+                  >
+                    <div className="flex items-start justify-between gap-4 mb-4 px-8 pt-8">
                       <div>
                         <p
                           className="text-xs mb-2"
@@ -503,7 +507,10 @@ export default function ResultPageClient({ results }: any) {
                           Dimension 0{index + 1}
                         </p>
 
-                        <h4 className="text-[#252525] text-sm md:text-xl font-medium" style={{ color: color }}>
+                        <h4
+                          className="text-[#252525] text-sm md:text-xl font-medium"
+                          style={{ color: color }}
+                        >
                           {score.title}
                         </h4>
                       </div>
@@ -521,7 +528,6 @@ export default function ResultPageClient({ results }: any) {
                   </div>
 
                   <div className="p-8">
-
                     <p className="text-sm text-[#4B5563] leading-relaxed ">
                       {getDimensionInsight(score20)}
                     </p>
@@ -534,7 +540,8 @@ export default function ResultPageClient({ results }: any) {
                       <li>Current score: {score20}/20</li>
                       <li>Alignment percentage: {score.percentage}%</li>
                       <li>
-                        Priority level based on comparative dimension performance
+                        Priority level based on comparative dimension
+                        performance
                       </li>
                     </ul>
 
@@ -546,8 +553,6 @@ export default function ResultPageClient({ results }: any) {
                       {getDimensionNextStep(score20)}
                     </p>
                   </div>
-
-
                 </div>
               );
             })}
@@ -641,8 +646,6 @@ export default function ResultPageClient({ results }: any) {
                 {result?.primaryTensionBody}
               </div>
             </div>
-
-
           </div>
         </section>
       </div>
@@ -665,23 +668,41 @@ export default function ResultPageClient({ results }: any) {
               </button>
 
               <h2 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 tracking-tight leading-tight">
-                You've Seen the Gaps. Now <span className="italic opacity-35">Uncover What's Causing</span> Them
-
+                You've Seen the Gaps. Now{" "}
+                <span className="italic opacity-35">
+                  Uncover What's Causing
+                </span>{" "}
+                Them
               </h2>
 
               <p className="text-base sm:text-base text-[#B5B5B5] leading-relaxed max-w-2xl mx-auto md:mx-0">
-                Your Harmony 360 Lite report has identified where alignment is breaking down in your organization. But knowing where the problem exists is only the first step. The Full Harmony 360 Diagnostic goes deeper-revealing the root causes behind these gaps, how they are impacting your performance, and the exact actions required to fix them.
+                Your Harmony 360 Lite report has identified where alignment is
+                breaking down in your organization. But knowing where the
+                problem exists is only the first step. The Full Harmony 360
+                Diagnostic goes deeper-revealing the root causes behind these
+                gaps, how they are impacting your performance, and the exact
+                actions required to fix them.
               </p>
-              <h4 className="text-base sm:text-base text-[#FFFFFF] font-semibold mt-5">With the Full Harmony 360, you will:</h4>
+              <h4 className="text-base sm:text-base text-[#FFFFFF] font-semibold mt-5">
+                With the Full Harmony 360, you will:
+              </h4>
               <p className="text-base sm:text-base text-[#B5B5B5] leading-relaxed max-w-2xl mx-auto md:mx-0">
-                Identify the underlying causes of misalignment across all 7 dimensions Uncover hidden friction between your brand, culture, and operations Receive targeted, actionable recommendations tailored to your business Gain a clear roadmap to improve consistency, performance, and customer experience
+                Identify the underlying causes of misalignment across all 7
+                dimensions Uncover hidden friction between your brand, culture,
+                and operations Receive targeted, actionable recommendations
+                tailored to your business Gain a clear roadmap to improve
+                consistency, performance, and customer experience
               </p>
-            </div> 
- 
+            </div>
+
             <div className="w-full md:w-auto flex justify-center md:justify-end">
-              <button className="font-sans px-4 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs sm:text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D] whitespace-nowrap cursor-pointer">
+              <a
+                target="_blank"
+                href="https://shayonsmith.com/book-a-call"
+                className="font-sans px-4 lg:px-5 py-2.5 rounded-lg border-none bg-[#F19526] text-white text-xs sm:text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_15px_0_#F195264D] whitespace-nowrap cursor-pointer"
+              >
                 Unlock Your Full Harmony 360 Report
-              </button>
+              </a>
             </div>
           </div>
         </div>
