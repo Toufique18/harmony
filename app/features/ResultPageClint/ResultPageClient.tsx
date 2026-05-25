@@ -664,7 +664,7 @@ export default function ResultPageClient({ results }: any) {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 lg:gap-12">
             <div className="w-full md:w-1/2 text-center md:text-left">
               <button className="text-xs sm:text-sm text-[#FFFFFF] rounded-full bg-white/5 backdrop-blur-sm border border-white/5 mb-4 shadow-sm px-3 py-1.5 sm:px-4 sm:py-1.5 inline-block">
-                Start Here Instant
+                Uncover Misalignment
               </button>
 
               <h2 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 tracking-tight leading-tight">
