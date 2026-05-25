@@ -23,7 +23,7 @@ export default function Know() {
           {/* Left Content - Full width on mobile, half on desktop */}
           <div className="w-full md:w-1/2 text-center md:text-left">
             <button className="text-xs sm:text-sm text-[#FFFFFF] rounded-full bg-white/5 backdrop-blur-sm border border-white/5 mb-4 shadow-sm px-3 py-1.5 sm:px-4 sm:py-1.5 inline-block">
-              Start Here · Free · Instant
+              Uncover Misalignment
             </button>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 tracking-tight leading-tight">

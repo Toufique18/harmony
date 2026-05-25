@@ -34,8 +34,6 @@ export default function Gap() {
             />
 
           </div>
-
-
         </div>
       </div>
     </section>
